@@ -1,0 +1,80 @@
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.clearfix::after {
+	content: "";
+	display: table;
+	width: 100%;
+	clear: both;
+}
+.container {
+	max-width: 1000px; 
+	padding: 0 20px;
+	margin: 0 auto;
+}
+.table {
+	border-collapse: separate;
+	border-spacing: 0;	
+	display: block;
+	overflow-x: scroll;
+}
+.header {
+	color: #003663;
+	font-size: 20px;
+	font-weight: normal;
+}
+.under_title {
+	color: #7f7f7f;
+	font-size: 13px;
+	margin-top: 21px;
+	margin-bottom: 19px;
+}
+.name {
+	font-size: 14px;
+	color: #2f4455;
+	padding: 14px 104px 14.1px 21px;
+}
+.address {
+	font-size: 12px;	
+	color: #2f4455;
+	padding-right: 36px;
+}
+.table tr:nth-child(odd) td {
+	background: #f4fbfd;
+	border-top: 1px solid #d7e7ec;
+	border-bottom: 1px solid #d7e7ec;
+}
+.table tr:nth-child(odd) td:first-child {
+	border-left: 1px solid #d7e7ec;
+	border-radius: 3px 0 0 3px;
+}
+.table tr:nth-child(odd) td:last-child {
+	border-right: 1px solid #d7e7ec;
+	border-radius: 0 3px 3px 0;
+}
+.rating-wrap {
+	width: 81px;
+	padding-bottom: 5px;
+	height: 20px;
+}
+.rating {
+	height: 20px;
+	background: url(../design/star.png) left bottom repeat-x;
+}
+.map_link {
+	font-size: 12px;
+	color: #0c99c8;
+}
+.rating-cell {
+	padding-right: 30px;
+}
+.map_link {
+	padding-right: 17px;
+}
+@media screen and (min-width: 600px) {
+	.table {
+		overflow-x: auto;
+		display: inline-block;
+	}
+
+}
